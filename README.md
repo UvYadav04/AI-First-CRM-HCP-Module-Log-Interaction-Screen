@@ -7,13 +7,6 @@
 ![Groq](https://img.shields.io/badge/Groq-qwen3.6--27b-F55036?logo=groq&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini-2.5--flash%20fallback-4285F4?logo=googlegemini&logoColor=white)
 
-```
-┌─────────────────────────────┬─────────────────────────────┐
-│   Interaction Form (read-    │   AI Assistant (chat)       │
-│   only, driven entirely by   │   "Met Dr. Sharma, positive │
-│   the chat on the right)     │    sentiment, discussed..." │
-└─────────────────────────────┴─────────────────────────────┘
-```
 
 ## 1. About the app
 
@@ -97,9 +90,3 @@ Type a message like `"Met Dr. Sharma, positive sentiment, discussed Prodo-X"` in
 ## Known deviations from the brief
 
 - **Model substitution.** Brief names `gemma2-9b-it`, deprecated on Groq. Moved through `llama-3.3-70b-versatile` → `openai/gpt-oss-120b` → `qwen/qwen3.6-27b` as Groq's lineup changed (details in `backend/README.md`). Current model is tagged "Preview" by Groq — a one-line `.env` fallback to `llama-3.3-70b-versatile` is documented if it's ever pulled.
-- **6 tools instead of the minimum 5.**
-- **"Summarize from Voice Note"** appears in the original mockup but has no tool behind it here — shown greyed out for visual fidelity rather than removed.
-
-## Video walkthrough
-
-_Add the link here once recorded._
